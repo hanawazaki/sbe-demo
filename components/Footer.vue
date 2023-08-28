@@ -1,18 +1,19 @@
 <template>
-  <footer class="bg-white dark:bg-gray-900">
+  <footer class="bg-white dark:bg-gray-900 mt-[100px] border">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <a href="https://flowbite.com/" class="flex items-center">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              class="h-8 mr-3"
-              alt="FlowBite Logo"
+              src="../assets/images/sb-logo1.png"
+              class="h-10 mr-3"
+              alt="Flowbite Logo"
             />
-            <span
-              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-              >Flowbite</span
+            <h5
+              class="self-center text-xl leading-4 font-semibold whitespace-nowrap dark:text-white"
             >
+              SB Engineering<br />Group
+            </h5>
           </a>
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -25,7 +26,7 @@
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
               <li class="mb-4">
                 <a href="https://flowbite.com/" class="hover:underline"
-                  >Flowbite</a
+                  >SB Engineering</a
                 >
               </li>
               <li>
@@ -79,8 +80,9 @@
       <div class="sm:flex sm:items-center sm:justify-between">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
           >© 2023
-          <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>.
-          All Rights Reserved.
+          <a href="https://flowbite.com/" class="hover:underline"
+            >SB Engineering</a
+          >. All Rights Reserved.
         </span>
         <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
           <a

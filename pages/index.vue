@@ -50,9 +50,44 @@
     </section>
 
     <section class="mt-[100px] w-full">
-      <div class="max-w-7xl mx-auto">
-        <div class="mb-5">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-[100px]">
+        <div class="mb-5 flex justify-between">
           <h1 class="text-3xl font-semibold">Units</h1>
+          <form>
+            <label
+              for="default-search"
+              class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+              >Search</label
+            >
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search Units, Types..."
+                required
+              />
+            </div>
+          </form>
         </div>
 
         <!-- card -->
@@ -60,7 +95,7 @@
           <div
             v-for="data in 9"
             :key="data"
-            class="max-w-sm p-6 bg-white border mb-5 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="max-w-sm p-6 bg-white border mb-5 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all ease-in-out duration-300 hover:scale-105"
           >
             <img
               src="../assets/images/cat-logo.png"
@@ -74,7 +109,7 @@
     </section>
 
     <section class="mt-[100px] w-full">
-      <div class="max-w-7xl mx-auto">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-[100px]">
         <div class="mb-5">
           <h1 class="text-3xl font-semibold">Featured Products</h1>
         </div>
@@ -82,7 +117,7 @@
           <div
             v-for="data in 3"
             :key="data"
-            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-all ease-in-out duration-300 hover:scale-105"
           >
             <a href="#">
               <img
@@ -99,6 +134,7 @@
                   Collar Roof Guard Komatsu
                 </h5>
               </a>
+              <div class="flex items-center mt-2.5">D65/D85 - 14X-978-2310</div>
               <div class="flex items-center mt-2.5 mb-5">Stock : 1</div>
               <div class="flex items-center justify-between">
                 <span class="text-3xl font-bold text-gray-900 dark:text-white"
@@ -115,6 +151,14 @@
         </div>
       </div>
     </section>
+
+    <div class="relative max-w-7xl mx-auto">
+      <div class="absolute z-10 top-5 right-3">
+        <a href="#">
+          <img src="../assets/images/wa-logo.png" alt="wa" class="w-[70px]" />
+        </a>
+      </div>
+    </div>
   </main>
 </template>
 
