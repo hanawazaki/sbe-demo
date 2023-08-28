@@ -51,8 +51,8 @@
 
     <section class="mt-[100px] w-full">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-[100px]">
-        <div class="mb-5 flex justify-between">
-          <h1 class="text-3xl font-semibold">Units</h1>
+        <div class="mb-5 flex justify-between flex-col md:flex-row">
+          <h1 class="text-3xl font-semibold mb-3">Units</h1>
           <form>
             <label
               for="default-search"
@@ -91,7 +91,10 @@
         </div>
 
         <!-- card -->
-        <nuxt-link to="/product" class="grid grid-cols-3 gap-5 justify-between">
+        <nuxt-link
+          to="/product"
+          class="grid grid-cols-1 md:grid-cols-3 gap-5 justify-between"
+        >
           <div
             v-for="data in 9"
             :key="data"
@@ -113,7 +116,7 @@
         <div class="mb-5">
           <h1 class="text-3xl font-semibold">Featured Products</h1>
         </div>
-        <div class="grid grid-cols-3 gap-5 justify-between">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 justify-between">
           <div
             v-for="data in 3"
             :key="data"
