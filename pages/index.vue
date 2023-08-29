@@ -116,38 +116,40 @@
         <div class="mb-5">
           <h1 class="text-3xl font-semibold">Featured Products</h1>
         </div>
-        <div
-          v-for="data in 3"
-          :key="data"
-          class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-        >
-          <a href="#">
-            <img
-              class="p-5 rounded-t-lg max-w-xs mx-auto"
-              src="../../assets/images/feat1.jpg"
-              alt="product image"
-            />
-          </a>
-          <div class="px-5 pb-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 justify-between">
+          <div
+            v-for="data in 3"
+            :key="data"
+            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
             <a href="#">
-              <h5
-                class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
-              >
-                Collar Roof Guard Komatsu
-              </h5>
+              <img
+                class="p-5 rounded-t-lg max-w-xs mx-auto"
+                src="../assets/images/feat1.jpg"
+                alt="product image"
+              />
             </a>
-            <div class="flex items-center mt-2">D65/D85 - 14X-978-2310</div>
-            <div class="flex items-center mb-5">Stock : 1</div>
+            <div class="px-5 pb-5">
+              <a href="#">
+                <h5
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Collar Roof Guard Komatsu
+                </h5>
+              </a>
+              <div class="flex items-center mt-2">D65/D85 - 14X-978-2310</div>
+              <div class="flex items-center mb-5">Stock : 1</div>
 
-            <div class="flex items-center justify-between">
-              <span class="text-3xl font-bold text-gray-900 dark:text-white"
-                >$599</span
-              >
-              <a
-                href="#"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >Tanya Produk ini</a
-              >
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold text-gray-900 dark:text-white"
+                  >Rp 30.000</span
+                >
+                <a
+                  href="#"
+                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >Tanya Produk ini</a
+                >
+              </div>
             </div>
           </div>
         </div>
