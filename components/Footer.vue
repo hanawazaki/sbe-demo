@@ -3,7 +3,7 @@
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
-          <a href="https://flowbite.com/" class="flex items-center">
+          <NuxtLink to="/" class="flex items-center">
             <img
               src="../assets/images/sb-logo1.png"
               class="h-10 mr-3"
@@ -14,7 +14,7 @@
             >
               SB Engineering<br />Group
             </h5>
-          </a>
+          </NuxtLink>
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
